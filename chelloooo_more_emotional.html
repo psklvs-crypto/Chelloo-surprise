@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#dceeff">
+<title>For chelloooo 🤍🫶</title>
+<style>
+:root{--ink:#24415f;--blue:#8fc7f3;--deep:#3b78ad;--pale:#f2f9ff;--white:#fff;--line:#d6eafa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(180deg,#eaf6ff 0%,#fff 48%,#eaf6ff 100%);color:var(--ink);font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif;overflow-x:hidden}
+button,input{font:inherit}
+button{cursor:pointer}
+.bg-hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.float{position:absolute;bottom:-50px;color:#91c9f5;opacity:.55;animation:floatUp linear infinite}
+@keyframes floatUp{to{transform:translateY(-115vh) rotate(25deg);opacity:0}}
+.wrap{width:min(900px,92%);margin:auto;position:relative;z-index:1}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;color:#52799c;font-size:.9rem}
+.brand{font-weight:800;letter-spacing:.04em}
+.pill{border:1px solid var(--line);background:#ffffffb8;border-radius:99px;padding:8px 13px}
+.hero{text-align:center;padding:54px 10px 48px}
+.eyebrow{font-size:.78rem;letter-spacing:.19em;text-transform:uppercase;color:#4d8bbd;font-weight:800}
+.hero h1{font-size:clamp(2.7rem,9vw,5.6rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0;color:#315f89}
+.hero h1 span{color:#6fb2e8}
+.hero p{max-width:550px;margin:0 auto;color:#5e7f9c;font-size:1.08rem;line-height:1.8}
+.hero-heart{font-size:2.2rem;display:inline-block;animation:beat 1.5s infinite}
+@keyframes beat{50%{transform:scale(1.18)}}
+.btn{border:0;border-radius:99px;padding:13px 19px;background:#4b91c9;color:white;font-weight:800;box-shadow:0 8px 20px #4b91c92e;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 11px 24px #4b91c944}
+.btn.secondary{background:white;color:#3978ac;border:1px solid var(--line);box-shadow:none}
+.hero .btn{margin-top:25px}
+section{padding:25px 0 40px}
+.section-head{text-align:center;margin-bottom:22px}
+.section-head .mini{color:#6b9dc5;font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+h2{font-size:clamp(1.7rem,5vw,2.5rem);margin:8px 0;color:#315f89;letter-spacing:-.03em}
+.sub{color:#7590a8;line-height:1.7;margin:0 auto;max-width:550px}
+.card{background:#ffffffd9;border:1px solid #dcecf8;border-radius:26px;padding:clamp(20px,5vw,34px);box-shadow:0 14px 40px #5b9ac215}
+.letter-top{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.stamp{width:46px;height:46px;border-radius:16px;background:#e1f1ff;display:grid;place-items:center;font-size:1.4rem}
+.letter-top strong{display:block}.letter-top small{color:#7d9ab3}
+.letter p{font-family:Georgia,serif;font-size:1.08rem;line-height:1.95;color:#476782;margin:12px 0}
+.signature{font-family:Georgia,serif;font-style:italic;color:#4b91c9;font-size:1.25rem;margin-top:22px}
+.surprise{background:linear-gradient(135deg,#d9edff,#f8fcff);text-align:center;overflow:hidden}
+.gift{font-size:3.4rem;display:inline-block;animation:bob 2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(4deg)}}
+.hidden-message{display:none;margin:22px auto 0;max-width:520px;background:#ffffffc9;border:1px dashed #9ecbf0;padding:20px;border-radius:20px;line-height:1.8;animation:appear .5s ease}
+.hidden-message.show{display:block}
+@keyframes appear{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.player{display:flex;gap:15px;align-items:center;flex-wrap:wrap}
+.disc{width:58px;height:58px;flex-shrink:0;border-radius:50%;display:grid;place-items:center;background:linear-gradient(145deg,#b8e0ff,#e9f6ff);font-size:1.5rem}
+.track{flex:1;min-width:160px}.track strong{display:block}.track small{color:#7b99b4;display:block;margin-top:4px}
+.player-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+input[type=file]{max-width:100%;font-size:.8rem;color:#6e8ca5}
+.note{font-size:.85rem;color:#7b96ad;line-height:1.6;margin:14px 0 0}
+.quiz-question{font-weight:800;font-size:1.15rem;margin:0 0 16px}
+.answers{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.answer{background:#f7fbff;border:1px solid #d8eafa;color:#476d8d;border-radius:15px;padding:13px;text-align:left;transition:.15s}
+.answer:hover{border-color:#7db8e8;background:#eef8ff}
+.answer.selected{background:#dff0ff;border-color:#5b9ed5;color:#2d628f}
+.quiz-result{min-height:28px;margin-top:16px;color:#397bad;font-weight:700}
+.progress{height:5px;background:#e4f1fc;border-radius:99px;margin-bottom:18px;overflow:hidden}.progress span{display:block;width:0;height:100%;background:#6db4ec;transition:.3s}
+.footer{text-align:center;padding:24px 0 48px;color:#8aa5bb;font-size:.85rem}
+.sparkle{display:inline-block;animation:twinkle 1.5s infinite alternate}@keyframes twinkle{to{opacity:.35;transform:scale(.8)}}
+.tanglish{font-family:ui-rounded,"Trebuchet MS",system-ui,sans-serif!important;color:#386f9d!important}
+.tamil{font-family:"Noto Sans Tamil","Latha",system-ui,sans-serif!important;color:#386f9d!important}
+.missing-card{text-align:center;background:linear-gradient(145deg,#e2f2ff,#fff);}
+.big-heart{font-size:3rem;display:inline-block;animation:beat 1.25s infinite}
+.affection-buttons{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+.affection-result{min-height:70px;margin:20px auto 0;max-width:560px;padding:18px;border-radius:20px;background:#ffffffd9;line-height:1.9;color:#3e7098;display:none;animation:appear .4s ease}
+.affection-result.show{display:block}
+.kiss-fly{position:fixed;z-index:10;pointer-events:none;animation:kissFly 1.8s ease-out forwards;font-size:2rem}
+@keyframes kissFly{0%{opacity:0;transform:translateY(20px) scale(.5)}20%{opacity:1}100%{opacity:0;transform:translateY(-160px) translateX(var(--drift)) scale(1.5)}}
+
+@media(max-width:560px){nav{padding:16px 0}.hero{padding:38px 4px}.answers{grid-template-columns:1fr}.player-actions{width:100%}.player-actions .btn{flex:1}.card{border-radius:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="bg-hearts" id="hearts" aria-hidden="true"></div>
+<div class="wrap">
+<nav><div class="brand">a little corner of us <span class="sparkle">✦</span></div><div class="pill">made with ♡</div></nav>
+<header class="hero">
+  <div class="eyebrow">a tiny website for my favorite person</div>
+  <div class="hero-heart">🤍</div>
+  <h1>Hey, <span>chelloooo</span> 🫶</h1>
+  <p>Just a little reminder that you matter so much to me. So I made you a small place on the internet, filled with a little bit of my heart. 💙</p>
+  <button class="btn" onclick="document.querySelector('#letter').scrollIntoView({behavior:'smooth'})">A little note for you ↓</button>
+</header>
+
+<section id="letter">
+ <div class="section-head"><div class="mini">from my heart</div><h2>A letter for you 📝</h2><p class="sub">Some things are easier to say when they're written down.</p></div>
+ <article class="card letter">
+  <div class="letter-top"><div class="stamp">💌</div><div><strong>To my chelloooo 🤍🫶</strong><small>read this whenever you need a smile</small></div></div>
+  <p class="tanglish">Hiii en chelloooo… en uyirukku romba close-aa irukkura person. 🤍🫂</p>
+  <p class="tanglish">Unna miss panren nu sollradhu romba chinna vaarthai maari irukku. Un kooda pesanum, un voice kekkanum, un face paakanum, summa un pakkathula irukkanum nu thonite irukku. Sometimes phone-a paathute iruppen… un message varuma nu. 🥺📱</p>
+  <p class="tamil">நீ அருகில் இல்லாத நேரத்திலும், என் நினைவுகளில் எப்போதும் நீ தான் இருக்கிறாய். உன்னிடம் பேசும் சின்னச் சின்ன தருணங்கள்கூட எனக்கு ரொம்பப் பெரிய சந்தோஷம். உன்னை இவ்வளவு மிஸ் பண்ணுவேன் என்று சில நேரம் எனக்கே தெரியாது. 🤍</p>
+  <p class="tanglish">Unna hug panni, konjam neram apdiye vidaama irukkanum pola irukku. Edhuvum pesa vendam… just nee irundha podhum. Enakku kashtama irukkura naal-la un kitta pesina konjam light-aa feel aagudhu. Nee happy-aa irukkanum, safe-aa irukkanum, un manasu kashtapada koodadhu nu naan eppovum wish panren. 🫶</p>
+  <p class="tanglish">Distance irundhaalum, indha heart-ku unna miss panradhu theriyum. Un kooda irukkura every little memory-yum naan nenachu smile panren. Sometimes smile pannitu iruppen, next second-ey “ippo nee irundha nalla irukkume” nu thonum. 🥹💙</p>
+  <p class="tamil">உன்னை நினைப்பது எனக்கு ஒரு பழக்கம் மட்டும் இல்லை… அது என் நாளின் ஒரு அழகான பகுதி. உன் சிரிப்பு, உன் பேச்சு, உன்னுடன் இருக்கும் அந்தச் சின்ன நேரங்கள்—எல்லாமே எனக்கு ஸ்பெஷல். இப்போது உன்னை அணைத்துக்கொள்ள முடியாவிட்டாலும், என் அன்பை இந்தச் சிறிய பக்கத்தில் வைத்திருக்கிறேன்.</p>
+  <p class="tanglish">Chelloooo, idha padikkumbodhu nee en pakkathula irundha, naan first unakku oru tight hug kuduppen… apram forehead-la oru kutty kiss 😚🤍. “I miss you so much” nu sollitu, konjam neram un shoulder-la saanjiruppen. Ippo virtual-aa dhaan mudiyum, aana en feelings real. 💌</p>
+  <p class="tanglish">Unna romba romba miss panren. Please un health-a paathuko, nalla saapidu, rest edu. Nee enakku romba precious. Innum neraya memories create pannuvom; innum neraya sirippom. Until I can see you again, indha page-a open pannina naan unakku anuppura hug-nu nenachikko. 🫂🤍</p>
+  <div class="signature">Unna miss pannitu irukkura, un person 🤍🫶</div>
+  <p class="note">Make this letter yours: you can add your real memories, nicknames, and inside jokes before sharing it.</p>
+ </article>
+</section>
+
+<section>
+ <div class="section-head"><div class="mini">tiny secret</div><h2>There's something for you… 🎁</h2><p class="sub">A little surprise is waiting. No peeking? Okay, definitely peek. 🥹</p></div>
+ <div class="card surprise">
+  <div class="gift">🎁</div>
+  <p style="line-height:1.8;color:#547895">Tap the button when you're ready, chelloooo.</p>
+  <button class="btn" id="revealBtn" onclick="revealSecret()">Open your secret letter 💌</button>
+  <div class="hidden-message" id="secret">
+   <div style="font-size:2rem">🩵✨🤍</div>
+   <strong>One tiny truth:</strong><br>
+   If I could give you one thing, it would be the ability to see yourself through my eyes — just for a moment — so you could understand how wonderful you are. You deserve to feel loved, appreciated, and enough, exactly as you are. Never forget that. 🫶
+   <p style="margin-bottom:0">And here's your virtual hug: 🫂💙</p>
+  </div>
+ </div>
+</section>
+
+<section id="miss-you">
+ <div class="section-head"><div class="mini">if I could reach you right now</div><h2>Virtual hug delivery 🫂💋</h2><p class="sub">Distance-ku oru solution illa… but konjam anbu anuppalaam. Tap what you need, chelloooo. 🤍</p></div>
+ <div class="card missing-card">
+  <div class="big-heart">🫶</div>
+  <p class="tanglish" style="font-size:1.15rem;line-height:1.9">“Inga vaa chellam… tight-aa hug pannikkaren. Ellam konjam neram marandhudu. I’m here, sending you all my love.”</p>
+  <div class="affection-buttons">
+   <button class="btn" onclick="sendAffection('hug')">🫂 Tight hug</button>
+   <button class="btn secondary" onclick="sendAffection('kiss')">💋 Kutty kiss</button>
+   <button class="btn secondary" onclick="sendAffection('miss')">🥺 I miss you</button>
+  </div>
+  <div class="affection-result" id="affectionResult" aria-live="polite"></div>
+  <p class="note">Every tap is a tiny reminder: “I wish I could be there with you right now.” 🤍</p>
+ </div>
+</section>
+
+<section>
+ <div class="section-head"><div class="mini">press play</div><h2>Our little soundtrack 🎶</h2><p class="sub">Add a song from your phone or computer to make this corner feel even more personal.</p></div>
+ <div class="card">
+  <div class="player"><div class="disc" id="disc">♫</div><div class="track"><strong id="trackName">Your special song</strong><small id="trackStatus">Choose an audio file to begin</small></div>
+   <div class="player-actions"><label class="btn secondary" for="audioFile">Choose song</label><input id="audioFile" type="file" accept="audio/*" hidden><button class="btn" id="playBtn" onclick="toggleAudio()">▶ Play</button></div>
+  </div>
+  <audio id="audio" preload="metadata"></audio>
+  <p class="note">Music tip: choose a song file saved on your device. The song itself isn't uploaded anywhere. If you publish this page, visitors will need their own copy unless you add a properly hosted audio file.</p>
+ </div>
+</section>
+
+<section>
+ <div class="section-head"><div class="mini">just for fun</div><h2>A tiny love quiz 🎮</h2><p class="sub">A few sweet questions — because every special person deserves a little game.</p></div>
+ <div class="card">
+  <div class="progress"><span id="progress"></span></div>
+  <div id="quizArea"><p class="quiz-question" id="question">Ready for a tiny challenge? 🩵</p><div class="answers" id="answers"><button class="answer" onclick="startQuiz()">Let's play ✨</button></div><div class="quiz-result" id="quizResult"></div></div>
+  <p class="note">These are playful questions, not a test! You can customize them in the JavaScript to match your own memories.</p>
+ </div>
+</section>
+<footer class="footer">made with a little love, a lot of blue, and thoughts of you 🤍<br><span style="font-size:.75rem">a small reminder: you are loved more than you know.</span></footer>
+</div>
+<script>
+const hearts=document.getElementById('hearts');
+for(let i=0;i<18;i++){const h=document.createElement('span');h.className='float';h.textContent=['♡','✦','♥','✧'][i%4];h.style.left=(Math.random()*100)+'%';h.style.fontSize=(14+Math.random()*22)+'px';h.style.animationDuration=(10+Math.random()*13)+'s';h.style.animationDelay=(-Math.random()*18)+'s';hearts.appendChild(h)}
+function revealSecret(){const box=document.getElementById('secret');box.classList.toggle('show');document.getElementById('revealBtn').textContent=box.classList.contains('show')?'Hide my secret 🤍':'Open your secret letter 💌'}
+function sendAffection(type){const box=document.getElementById('affectionResult');box.classList.add('show');let msg='';if(type==='hug'){msg='🫂🤍 *virtual hug incoming!* Chelloooo, imagine naan unna romba tight-aa hug panren… konjam neram vida maaten. “I miss you da/di… seekiram paakanum.” 💙';burst('🫂');burst('🤍');burst('🩵')}else if(type==='kiss'){msg='💋 Muahhh! Oru kutty forehead kiss, plus extra love parcel! 😚🤍 Nee pakkathula illa-nalum, indha kiss unakku reach aagattum nu nenachikko.';burst('💋');burst('😘');burst('💗')}else{msg='🥺 “I miss you so much” nu sollradhukku words pathala, chelloooo. Un voice, un smile, un presence—ellame miss panren. Ippo nee inga irundha evlo nalla irukkum… 🤍🫶';burst('🥺');burst('💌');burst('🤍')}box.textContent=msg}
+function burst(symbol){const el=document.createElement('span');el.className='kiss-fly';el.textContent=symbol;el.style.left=(15+Math.random()*70)+'vw';el.style.bottom='18vh';el.style.setProperty('--drift',((Math.random()*120)-60)+'px');document.body.appendChild(el);setTimeout(()=>el.remove(),1900)}
+const audio=document.getElementById('audio'),fileInput=document.getElementById('audioFile'),playBtn=document.getElementById('playBtn'),disc=document.getElementById('disc');
+let audioUrl=null;
+fileInput.addEventListener('change',()=>{const f=fileInput.files[0];if(!f)return;if(audioUrl)URL.revokeObjectURL(audioUrl);audioUrl=URL.createObjectURL(f);audio.src=audioUrl;document.getElementById('trackName').textContent=f.name.replace(/\.[^/.]+$/,'');document.getElementById('trackStatus').textContent='Ready when you are 💙';playBtn.textContent='▶ Play'});
+async function toggleAudio(){if(!audio.src){fileInput.click();return}if(audio.paused){try{await audio.play();playBtn.textContent='Ⅱ Pause';disc.style.animation='spin 4s linear infinite';}catch(e){document.getElementById('trackStatus').textContent='Tap play again to start the song.'}}else{audio.pause();playBtn.textContent='▶ Play';disc.style.animation='none'}}
+audio.addEventListener('ended',()=>{playBtn.textContent='▶ Play';disc.style.animation='none'});audio.addEventListener('pause',()=>{if(audio.ended||audio.paused){playBtn.textContent='▶ Play';disc.style.animation='none'}});audio.addEventListener('play',()=>{playBtn.textContent='Ⅱ Pause';disc.style.animation='spin 4s linear infinite'});
+const style=document.createElement('style');style.textContent='@keyframes spin{to{transform:rotate(360deg)}}';document.head.appendChild(style);
+const questions=[
+ {q:'What is the sweetest kind of surprise?',a:['A thoughtful little message 💌','A mountain of homework 📚','A phone at 1% 🔋','A rainy sock 🧦'],correct:0,feedback:'The little things can mean the most. 🤍'},
+ {q:'What should you always remember?',a:['You have to be perfect','You deserve kindness and care 🩵','You should never rest','You must do everything alone'],correct:1,feedback:'Exactly. You deserve love and kindness, just as you are. 🫶'},
+ {q:'Pick your virtual gift!',a:['A warm hug 🫂','A cloud ☁️','A tiny star ✨','All the love in this page 🤍'],correct:3,feedback:'All of it is yours, chelloooo! A giant virtual hug too. 🫂'}
+];let qi=0,score=0,started=false;
+function startQuiz(){qi=0;score=0;started=true;renderQuestion()}
+function renderQuestion(){const q=questions[qi];document.getElementById('progress').style.width=(qi/questions.length*100)+'%';document.getElementById('question').textContent=(qi+1)+'. '+q.q;document.getElementById('quizResult').textContent='';const box=document.getElementById('answers');box.innerHTML='';q.a.forEach((answer,i)=>{const b=document.createElement('button');b.className='answer';b.textContent=answer;b.onclick=()=>answerQuiz(i);box.appendChild(b)})}
+function answerQuiz(i){const q=questions[qi];document.querySelectorAll('.answer').forEach(b=>b.disabled=true);if(i===q.correct)score++;document.getElementById('quizResult').textContent=q.feedback;const next=document.createElement('button');next.className='btn';next.style.marginTop='12px';next.textContent=qi===questions.length-1?'See my result ✨':'Next question →';next.onclick=()=>{qi++;if(qi<questions.length)renderQuestion();else showResult()};document.getElementById('answers').appendChild(next)}
+function showResult(){document.getElementById('progress').style.width='100%';document.getElementById('question').textContent='You finished, chelloooo! 🤍';document.getElementById('answers').innerHTML='<button class="btn" onclick="startQuiz()">Play again ↻</button>';document.getElementById('quizResult').textContent='You got '+score+' out of '+questions.length+'. Your prize: unlimited virtual hugs 🫂💙'}
+</script>
+</body>
+</html>
